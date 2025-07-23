@@ -1,0 +1,171 @@
+@media screen and (max-width: 992px) {
+    /* hero section */
+    .hero-section {
+        height: 350px;
+    }
+
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-section p {
+        font-size: 1.1rem;
+    }
+
+
+}
+
+
+    
+    @media screen and (max-width: 576px) {
+        /* hero section */
+        .hero-section {
+            height: 300px;
+        padding: 0 1rem;
+    }
+
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    /* event section */
+    h2{
+        font-size: 2,5rem;
+    }
+
+    .carousel-slide{
+        max-height: 400px;
+        object-fit: cover;
+    }
+
+    /* join section */
+    .join-desc{
+        display: flex;
+        object-fit: cover;
+    }
+    .custom-btn{
+width: 100%;
+font-size: 16px;
+    }
+
+    /* program */
+    .program-aj {
+        flex: 0 0 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stat-card {
+        width: 60%; /* agar tidak terlalu lebar */
+        height: 200px;
+        font-size: 2rem;
+    }
+
+    .stat-label {
+        text-align: center;
+        font-size: 0.95rem;
+        margin-top: 8px;
+    }
+
+    /* button program */
+        .program-tmbl{
+           font-size: 12px;
+        }
+
+    /* quality */
+        .quality {
+        flex: 0 0 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stat-card {
+        width: 60%; /* agar tidak terlalu lebar */
+        height: 200px;
+        font-size: 2rem;
+    }
+
+    .stat-label {
+        text-align: center;
+        font-size: 0.95rem;
+        margin-top: 8px;
+    }
+
+
+
+    /* ABOUT US */
+    /* DESC */
+    .about-slogan {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    }
+
+    .about-title {
+        font-size: 1rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .about-desc {
+        font-size: 0.95rem;
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+
+    hr.DESC {
+        width: 85% !important;
+    }
+
+    /* SECTION PERKENALAN */
+    .horizontal-scroll {
+    padding-left: 16px; /* tambahkan padding agar kartu pertama tidak mepet */
+    justify-content: flex-start !important;
+    padding-left: 16px;
+    }
+
+    .perkenalan {
+        min-width: 200px;
+        max-width: 200px;
+        padding: 12px;
+    }
+
+    .name {
+        font-size: 1rem;
+    }
+
+    .role {
+        font-size: 0.85rem;
+    }
+
+    .desc {
+        font-size: 0.8rem;
+    }
+
+    .badge-card {
+        font-size: 10px;
+        padding: 4px 8px;
+    }
+}
+    @media screen and (max-width: 375px) {
+        /* hero section */
+        .hero-section {
+        height: 260px;
+    }
+    
+    .hero-section h1 {
+        font-size: 1.75rem;
+    }
+    
+    .hero-section p {
+        font-size: 0.95rem;
+    }
+    
+}

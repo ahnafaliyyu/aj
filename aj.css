@@ -1,0 +1,482 @@
+:root {
+  /* Warna utama dan latar */
+  --color-primary: #045260;        /* Primary color (biru kehijauan AJ) */
+  --color-background: #ffffff;     /* Latar belakang dasar (putih) */
+
+
+  /* Gunakan untuk transisi */
+  --transition-fast: 0.3s ease;
+}
+
+
+body {
+    font-family: poppins, sans-serif ;
+    background-color: rgb(255, 255, 255);
+}
+
+.container {
+    border-bottom-left-radius: 20 ;
+    border-bottom-right-radius: 20;
+}
+
+/* navbar style */
+
+.navbar{
+    z-index: 3;
+
+}
+
+
+/* navbar color */
+
+.nav-color{
+  background-color: #000;
+  transition: all ease-in-out 0.3s;
+}
+.bg-transparent{
+  transition: all ease-in-out 0.3s;
+
+}
+
+
+
+*{
+    z-index: 2;
+}
+
+.aksen-img{
+    z-index: 1;
+}
+
+.img-hero{
+    z-index: 1;
+}
+.navbar-brand{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.nav-link{
+    font-size: 16px;
+}
+.nav-link.active {
+    font-weight: 700;
+}
+    
+.nav-link:hover{
+      background-color: #045260;
+      border-radius: 20px;
+      
+    }
+    
+
+
+/* hwero */
+.hero-section {
+  background-image: url('Map of Indonesia.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;  /* ⬅️ wajib absolute agar menumpuk gambar */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;        /* ⬅️ inilah yang bikin overlay nutup semua area */
+  background-color: rgba(17, 75, 105, 0.65); /* warna biru transparan */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 2;
+}
+
+.hero-tag {
+  z-index: 3;
+  padding: 0 1rem;
+}
+
+.hero-section h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.hero-section p {
+  font-size: 1.25rem;
+  color: white;
+}
+
+
+
+/* event section */
+.textevent{ 
+  color: #226d93 ;
+}
+/* Batas tinggi gambar */
+.carousel-item img {
+  max-height: 600px;
+  object-fit: cover;
+}
+
+/* Tombol navigasi */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-size: 60% 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: invert(1);
+}
+
+/* Indikator bulat */
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+  position: relative;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  margin: 0 4px;
+  border-radius: 50%;
+  background-color: #0b2a58;
+  opacity: 0.5;
+  border: none;
+}
+
+.carousel-indicators .active {
+  opacity: 1;
+}
+
+/* join section */
+.custom-btn {
+  background-color: #045260;
+  color: #fff;
+  min-width: 250px;
+  padding: 10px 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+
+/* program section */
+
+
+.custom-collab-text {
+  margin-top: 2rem;     /* Tambahan jarak dari elemen di atas */
+  margin-bottom: 2rem;  /* Tambahan jarak dari tombol */
+  padding: 0 1rem;      /* Supaya teks tidak terlalu mentok di sisi kiri-kanan */
+  font-weight: 600;}
+
+
+/* quality section */
+.stat-card {
+  position: relative;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  font-size: 4rem;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.stat-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 123, 150, 0.7);
+}
+
+.stat-value {
+  position: relative;
+  z-index: 2;
+}
+
+.stat-label {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #2c3e50;
+}
+
+
+/* END HOME */
+
+
+.container-kls {
+    background-color: #EAF6FD;
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+    border-radius: 20px;
+}
+
+.kelas-jdl {
+  font-size: 36px;
+  font-weight: 700;
+  color: #003366;
+}
+
+.kotak-kelas {
+  margin: 20px;
+  flex: 1;
+  max-width: 300px;
+}
+.kelas-card {
+  border-radius: 16px;
+    padding: 20px;
+  overflow: hidden;
+  transition: 0.3s ease;
+  background-color: white;
+}
+
+.kelas-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.kelas-card img {
+  height: 180px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.kelas-card .card-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #003366;
+  margin-bottom: 8px;
+}
+
+.ket-kls {
+  font-size: 14px;
+  font-weight: 500;
+  color: #666;
+}
+
+.button-join {
+  font-weight: 400;
+  font-size: 16px;
+  background-color: #FFD43B;
+  color: #000;
+  border: none;
+  width: 120px;
+  height: 40px;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+.cnt-cpai{
+  background:linear-gradient(to bottom,#fff,#009BBF);
+}
+
+.ctn-cp{
+  background-color: #C9DCE1;
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+    border-radius: 20px;
+}
+
+/* footer */
+.footer{
+  background-color: #045260;
+  color: white;
+}
+
+.button-ft-primary {
+  background-color: #00aecd;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 8px 20px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.button-ft-primary:hover {
+  background-color: #989a1f;
+  color: #ffffff;
+}
+
+.footer-text {
+  margin: 5px 0;
+  font-weight: 400;
+}
+
+    .ft {
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+    .sosmed-item {
+        display: flex;
+        align-items: center;
+        justify-content: center; /* agar rata tengah horizontal */
+        margin-bottom: 10px;
+    }
+
+    .sosmed-item img {
+        width: 30px;
+        margin-right: 10px;
+    }
+
+    .sosmed-item p {
+        margin: 0;
+        font-size: 14px;
+    }
+
+
+
+.cp-gbar {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 20px auto; /* tengah horizontal + jarak bawah */
+  border-radius: 80px; /* padding atas dan bawah */
+  
+}
+
+
+
+
+
+
+/* ABOUT PROFILE */
+/* perkenlan section */
+.about-section {
+    background-color: #fff;
+}
+
+.about-slogan {
+    font-family: 'Georgia', serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #045260;
+}
+
+.about-title {
+    font-size: 1.25rem;
+}
+
+.about-desc {
+    margin: 0 auto;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #333;
+}
+/* staff perkenalan section */
+
+/* Menengahkan baris CEO & Founder */
+.horizontal-scroll.justify-center {
+  justify-content: center;
+}
+
+.horizontal-scroll {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  scroll-snap-type: x mandatory;
+}
+
+.team-card {
+  min-width: 250px;
+  max-width: 250px;
+  flex: 0 0 auto;
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  scroll-snap-align: start;
+  text-align: center;
+  position: relative;
+}
+
+.team-card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+.badge-card {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #045260;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.name {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin: 5px 0;
+}
+
+.role {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.desc {
+  font-size: 0.85rem;
+  color: #333;
+}
+
+/* community */
+/* comsection */
+.aj-family-section {
+  background-color: white;
+}
+
+.aj-logo {
+  max-width: 50%;
+  max-height: 50%;
+  height: auto;
+}
+
+.aj-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #045260; /* warna biru sesuai identitas Akademi Juara */
+  margin-bottom: 1rem;
+}
+
+.aj-desc {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+
+
+
