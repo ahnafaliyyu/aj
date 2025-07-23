@@ -340,6 +340,13 @@ body {
         margin-bottom: 10px;
     }
 
+    .sosmed-item a {
+    padding-left: 8px;
+}
+
+  .ig{
+    margin-left: 10px;
+  }
     .sosmed-item img {
         width: 30px;
         margin-right: 10px;
@@ -370,7 +377,7 @@ body {
 /* ABOUT PROFILE */
 /* perkenlan section */
 .about-section {
-    background-color: #fff;
+    background-color: #ffffff;
 }
 
 .about-slogan {
@@ -409,7 +416,7 @@ body {
   min-width: 250px;
   max-width: 250px;
   flex: 0 0 auto;
-  background-color: #fff;
+  background-color: #ebf2fb;
   border-radius: 16px;
   padding: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);

@@ -28,32 +28,69 @@
   <body>
     <!-- navbar -->
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-transparent position-fixed w-100 top-0">
+<nav class="navbar navbar-expand-lg navbar-dark bg-transparent position-fixed w-100 top-0 navbar-desktop d-none d-lg-block">
     <div class="container">
         <a class="navbar-brand" href="#">
-            <img src="assets/2.png" alt="" width="33" height="33" class="d-inline-block align-text-top me-3">
-            Akademi Juara
+        <img src="assets/2.png" alt="" width="33" height="33" class="d-inline-block align-text-top me-3">
+        Akademi Juara
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item mx-2">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item mx-2">
-                    <a class="nav-link" href="aboutprof.html">About US</a>
-                </li>
-                <li class="nav-item mx-2">
-                    <a class="nav-link" href="com.html">Community</a>
-                </li>
-            </ul>
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item mx-2">
+            <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item mx-2">
+            <a class="nav-link" href="aboutprof.html">About Us</a>
+            </li>
+            <li class="nav-item mx-2">
+            <a class="nav-link" href="com.html">Community</a>
+            </li>
+        </ul>
         </div>
     </div>
 </nav>
+
+<div class="d-lg-none">
+    <nav class="navbar navbar-dark bg-transparent position-fixed w-100 top-0 d-flex align-items-center navbar-mobile">
+        <div class="container-fluid d-flex justify-content-start align-items-center px-3">
+        <button class="navbar-toggler me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMobile"
+            aria-controls="offcanvasMobile">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand fw-bold text-white d-flex align-items-center" href="#">
+            <img src="assets/2.png" alt="logo" width="30" class="me-2">
+            AKADEMI JUARA
+        </a>
+        </div>
+    </nav>
+  <!-- Offcanvas Menu -->
+    <div class="offcanvas offcanvas-start bg-dark text-white" tabindex="-1" id="offcanvasMobile"
+    aria-labelledby="offcanvasMobileLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasMobileLabel">Menu</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+            <a class="nav-link text-white" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link text-white" href="aboutprof.html">About Us</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link text-white" href="com.html">Community</a>
+            </li>
+        </ul>
+        </div>
+    </div>
+</div>
+
+
 
     <!-- hero section -->
 <section class="hero-section">
@@ -131,11 +168,11 @@
 
         <!-- Dua tombol ajakan -->
         <div class="join-kelas d-flex flex-column flex-md-row justify-content-center align-items-center gap-3">
-        <a href="#" class="btn custom-btn px-4 py-2  ">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeKKNBrocPoDmrgwow483WLBBgkAQnyKqOUmOrLVLZ1AiDthg/viewform" class="btn custom-btn px-4 py-2  ">
             LET'S BE PART OF AKADEMI JUARA
         </a>
         <span class="fw-bold">OR</span>
-        <a href="#" class="join-kelas btn custom-btn px-4 py-2 ">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeC484UKTp61gHfyBFxin4akaeXsCG51-7XaUnq7pL5j0HOGw/viewform" class="join-kelas btn custom-btn px-4 py-2 ">
             JOIN AKADEMI JUARA CLASS
         </a>
         </div>
@@ -180,9 +217,11 @@
         </p>
     </div>
     <div class="d-flex gap-3 mb-2">
-        <a href="#" class="program-tmbl btn btn-primary px-4" style="background-color:  #0B5394;">BE A COLLABORATOR</a>
+        <a href="#" class="program-tmbl btn btn-primary px-4" style="background-color:  #0B5394;"
+        href="https://docs.google.com/forms/d/e/1FAIpQLScHieofjVp8Qp1uK1cZZtf2z-ms3ovVUdgNCNbAtnpFwmX0IQ/viewform">BE A COLLABORATOR</a>
         <span class="align-self-center fw-bold">OR</span>
-        <a href="#" class="program-tmbl btn btn-primary px-4" style="background-color:  #0B5394;">BE A MASTER MENTOR</a>
+        <a href="#" class="program-tmbl btn btn-primary px-4" style="background-color:  #0B5394;"
+        href="https://docs.google.com/forms/d/e/1FAIpQLSeYBhKDRfmm6i39qyQ16Ku6bij6zjrwEPh0Q_z-86U1pjZ-vg/viewform">BE A MASTER MENTOR</a>
     </div>
 </div>
 
@@ -246,7 +285,7 @@
         <div class="col-md-4 text-center">
             <p class="fw-bold">HUBUNGI KAMI</p>
 
-            <div class="sosmed-item mb-2">
+            <div class="sosmed-item ig mb-2">
             <a href="https://www.instagram.com/akademi.juara/" target="_blank"
                 class="d-flex align-items-center justify-content-center text-decoration-none text-light gap-2">
                 <img src="assets/ig.png" alt="Instagram" width="20">
