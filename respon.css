@@ -13,9 +13,21 @@
     }
 
 
+
+
+/* footer */
+    .quote-line {
+        font-size: 1.1rem;
+        white-space: nowrap;         /* 🔧 Bikin satu baris di desktop */
+    }
+
+
+.quote-author {
+    font-size: 0.9rem;
+    margin-top: 4px;
+    opacity: 0.8;
 }
-
-
+}
     
     @media screen and (max-width: 576px) {
         /* hero section */

@@ -332,6 +332,26 @@ body {
         font-weight: bold;
         margin-bottom: 15px;
     }
+.quote-container {
+  font-family: 'Poppins', sans-serif;
+  background-color: #0b4c5f; /* warna biru gelap, bisa diganti */
+  padding: 2rem 1rem;
+  color: white;
+}
+
+.quote-line {
+  font-style: italic;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 0.4rem;
+  white-space: normal;
+}
+
+.quote-author {
+  font-size: 0.95rem;
+  font-style: italic;
+  opacity: 0.85;
+}
 
     .sosmed-item {
         display: flex;
