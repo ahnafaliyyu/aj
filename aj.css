@@ -374,6 +374,7 @@ body {
 
 
 
+
 /* ABOUT PROFILE */
 /* perkenlan section */
 .about-section {
@@ -484,6 +485,97 @@ body {
   color: #333;
 }
 
+/* event */
+.kelas-scroll-wrapper {
+  scroll-snap-type: x mandatory;
+}
+
+.kotak-kelas {
+  scroll-snap-align: start;
+}
+
+.container-kls {
+  padding-bottom: 1rem;
+}
+
+.kelas-card {
+  min-height: 100%;
+  height: 100%;
+}
+
+.kotak-kelas {
+  flex: 0 0 auto; /* Jangan mengizinkan kolom menyusut terlalu kecil */
+}
 
 
+/* CLASSES */
+.kelas-section {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: white;
+  overflow: hidden;
+}
 
+.section-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.kelas-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  padding: 10px;
+}
+
+/* Kartu */
+.kelas-item {
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.kelas-item:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.kelas-inner h5 {
+  margin-top: 16px;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.kelas-inner p {
+  font-size: 0.9rem;
+  color: #ddd;
+  margin-top: 10px;
+}
+
+.kelas-icon img {
+  width: 60px;
+  transition: transform 0.3s ease;
+}
+
+.kelas-item:hover .kelas-icon img {
+  transform: scale(1.2);
+}
+
+/* Responsif Scroll di Mobile */
+@media screen and (max-width: 576px) {
+  .kelas-wrapper {
+    display: flex;
+    overflow-x: auto;
+    gap: 16px;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 10px;
+  }
+
+  .kelas-item {
+    min-width: 240px;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+  }
+}
