@@ -583,19 +583,4 @@ body {
   transform: scale(1.2);
 }
 
-/* Responsif Scroll di Mobile */
-@media screen and (max-width: 576px) {
-  .kelas-wrapper {
-    display: flex;
-    overflow-x: auto;
-    gap: 16px;
-    scroll-snap-type: x mandatory;
-    padding-bottom: 10px;
-  }
 
-  .kelas-item {
-    min-width: 240px;
-    flex-shrink: 0;
-    scroll-snap-align: center;
-  }
-}
